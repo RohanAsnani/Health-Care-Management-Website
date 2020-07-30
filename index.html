@@ -1,0 +1,238 @@
+<html>
+
+<head>
+    <title>Tsec Clinic</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Best and Affordable health services">
+    <meta name="keywords" content="clinic, doctor, medicine, consultation">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div id="overlay">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        var overlay = document.getElementById("overlay");
+
+        window.addEventListener('load', function() {
+            overlay.style.display = 'none';
+        })
+    </script>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">TSEC</span> Clinic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html"> HOME </a></li>
+                    <li><a href="doctors.html"> DOCTORS </a></li>
+                    <li><a href="aboutus.html"> ABOUT US </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                    <li><a href="sim.html">BUY</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Showcase">
+        <div class="container">
+            <h1>TSEC CLINIC</h1>
+            <p> We are one of the leading clinic in our region. Our doctors are the most reputed within their fields backed with vast amount of medical experience.</p>
+        </div>
+    </section>
+
+    <section id="bookapt">
+        <div class="container">
+            <h1>
+                Want To Book An Appointment?
+            </h1>
+            <form action="signUp.php" method="post">
+                <input type="text" name="name" placeholder=" Enter your Name" required>
+                <input type="email" name="xyz" placeholder="Enter your Email" onblur="validateEmail(this.value);" required>
+                <input type="tel" name="phonenumber" placeholder="Phone Number" required pattern="[0-9]{10}" />
+                <input type="submit" class="button_1" name="Submit" placeholder="Submit" />
+            </form>
+        </div>
+    </section>
+    <script>
+        function validateEmail(sEmail) {
+            var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
+
+            if (!sEmail.match(reEmail)) {
+                alert("Invalid email address");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <!--loader hai -->
+    <div class="container">
+        <div class="boxo"></div>
+        <div class="boxo"></div>
+    </div>
+
+    <script>
+        $(window).on("load", function() {
+            $(".boxo").fadeOut("slow");
+        });
+    </script>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="img/doc.svg">
+                <h3>Best Doctors</h3>
+                <p>Our Doctors have 10+ years of experience each.</p>
+            </div>
+            <div class="box">
+                <img src="img/appt.svg">
+                <h3>Hassfle Free Appointments</h3>
+                <p>Book an appointment with our doctors easily through our website or by calling us up. </p>
+            </div>
+            <div class="box">
+                <img src="img/report.svg">
+                <h3>Report Sharing</h3>
+                <p>All our patient are sent a copy of their reports on their email id after each visit. </p>
+            </div>
+        </div>
+    </section>
+    <br>
+
+
+
+
+    <!-- rohan start. -->
+    <section id="splitwala">
+        <div class="container">
+            <div class="split left">
+                <h1>OUR DOCTORS</h1>
+                <a href="#" class="buttonn">Read More</a>
+            </div>
+            <div class="split right">
+                <h1>BOOK AN APPOINMENT</h1>
+                <a href="#" class="buttonn">Read More</a>
+            </div>
+        </div>
+
+        <script>
+            const left = document.querySelector(".left");
+            const right = document.querySelector(".right");
+            const container = document.querySelector(".container");
+
+            left.addEventListener("mouseenter", () => {
+                container.classList.add("hover-left");
+            });
+
+            left.addEventListener("mouseleave", () => {
+                container.classList.remove("hover-left");
+            });
+
+            right.addEventListener("mouseenter", () => {
+                container.classList.add("hover-right");
+            });
+
+            right.addEventListener("mouseleave", () => {
+                container.classList.remove("hover-right");
+            });
+        </script>
+        <!--end rohan-->
+    </section>
+    <section>
+        <div class="testimonial-section">
+            <div class="inner-width">
+                <h1>What Our Clients Say</h1>
+                <div class="testimonial-pics">
+                    <img src="img/p1.jpg" alt="test-1" class="active">
+                    <img src="img/p2.jpg" alt="test-2">
+                    <img src="img/p3.jpg" alt="test-3">
+                    <img src="img/p4.jpg" alt="test-4">
+                </div>
+
+                <div class="testimonial-contents">
+                    <div class="testimonial active" id="test-1">
+                        <p>We are extremely grateful for the excellent service and have been more than happy with the results. </p>
+                        <span class="description">ROHAN ASNANI</span>
+                    </div>
+
+                    <div class="testimonial" id="test-2">
+                        <p>Your service was efficient and would not hesitate using your company for future </p>
+                        <span class="description">Chaahat Amesar</span>
+                    </div>
+
+                    <div class="testimonial" id="test-3">
+                        <p> would like to thank DR ROBIN PINTO doctor and the team for the fantastic work</p>
+                        <span class="description">Chomu Asnani</span>
+                    </div>
+
+                    <div class="testimonial" id="test-4">
+                        <p>I�d say that the team are excellent and it is some of the best service, If you would like a professional experience from an excellent doctor then come here</p>
+                        <span class="description">Suyash Baharani</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $('.testimonial-pics img').click(function() {
+                $(".testimonial-pics img").removeClass("active");
+                $(this).addClass("active");
+
+                $(".testimonial").removeClass("active");
+                $("#" + $(this).attr("alt")).addClass("active");
+            });
+        </script>
+    </section>
+
+    <!--  CONTACT US  -->
+    <footer>
+        <div class="footer">
+
+
+
+
+            <div class="contact_cont" id="contact_cont">
+                <div id="contact">
+                    <div class="ftxt" id="ftxt">
+                        <h1 class="h1alt" id="contactin">TSEC CLINIC</h1>
+                        <p>
+                            Monday-Saturday 8am to 10pm
+                        </p>
+
+                        <p>BANDRA MUMBAI, 400050</p>
+
+
+
+                        <p>+91 9967770380</p>
+                        <P>Fax No: +91 - 0123456789</P>
+
+                        <p>TSEC CLINIC Copyright &copy; 2019</p>
+                    </div>
+                    <h1 class="h1alt" id="contact">Stay in the Loop </h1>
+                    <p>Send us an email, or follow us on social media</p>
+
+                    <div class="social-icons-alt" id="social-icons-alt">
+                        <a href="https://twitter.com/PurdueHyperloop?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="iconsalt" src="./img/social-icons/twitter.png"></a>
+                        <a href="https://www.facebook.com/PurdueHyperloop/"><img class="iconsalt" src="./img/social-icons/facebook.png"></a>
+                        <a href="https://www.instagram.com/purdue_hyperloop/?hl=en"><img class="iconsalt" src="./img/social-icons/instagram.png"></a>
+                        <a href="mailto:someone@yoursite.com"><img class="iconsalt" src="./img/social-icons/email.png"></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<html>
+
+<head>
+    <title>TSEC Clinic</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <style>
+        #showcase {
+            min-height: 400px;
+            background: url('img/bg-doc.jpg') no-repeat 0 -200px;
+            text-align: center;
+            color: black;
+        }
+        
+        #boxes .box img {
+            width: 200px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Best and Affordable health services">
+    <meta name="keywords" content="clinic, doctor, medicine, consultation">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">TSEC</span> Clinic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li class="current"><a href="doctors.html"> DOCTORS </a></li>
+                    <li><a href="aboutus.html"> ABOUT US </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                    <li><a href="sim.html">BUY</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Showcase">
+        <div class="container">
+            <h1>Our Doctors</h1>
+            <p> We are one of the leading clinic in our region. Our doctors are the most reputed within their fields backed with vast amount of medical experience.</p>
+        </div>
+    </section>
+
+    <section id="bookapt">
+        <div class="container">
+            <h1>
+                Want To Book An Appointment?
+            </h1>
+            <form action="signUp.php" method="post">
+                <input type="text" name="name" placeholder=" Enter your Name" required>
+                <input type="email" name="xyz" placeholder="Enter your Email" onblur="validateEmail(this.value);" required>
+                <input type="tel" name="phonenumber" placeholder="Phone Number" required pattern="[0-9]{10}" />
+                <input type="submit" class="button_1" name="Submit" placeholder="Submit" />
+            </form>
+        </div>
+    </section>
+    <script>
+        function validateEmail(sEmail) {
+            var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
+
+            if (!sEmail.match(reEmail)) {
+                alert("Invalid email address");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="img/doc1.jpg">
+                <h3>Dr. Robin Pinto</h3>
+                <p>Cardiologist</p>
+                <p>M.B.B.S., M.D. (Internal Medicine), DM - Cardiology</p>
+            </div>
+            <div class="box">
+                <img src="img/doc2.jpg">
+                <h3>Dr. Sangeet Gawhale</h3>
+                <p>Orthopedist</p>
+                <p>M.B.B.S. M.D. (Orthodontistry)</p>
+            </div>
+            <div class="box">
+                <img src="img/doc3.jpg">
+                <h3>Dr. Jaswant Patil</h3>
+                <p>Cardiologist, Homeopath</p>
+                <p>M.B.B.S., M.D.(Cardiology), B.H.M.S., M.D.(Alternative Therapies)</p>
+            </div>
+            <div class="box">
+                <img src="img/doc2.jpg">
+                <h3>Dr. Prasad Rane</h3>
+                <p>Conservative Dentistry & Endodontics</p>
+                <p>BDS, MDS 17 years experience overall </p>
+            </div>
+            <div class="box">
+                <img src="img/doc3.jpg">
+                <h3>Dr. Mohit Solanki</h3>
+                <p>Conservative Dentistry & Endodontics</p>
+                <p>BDS, FICOI 8 years experience overall </p>
+            </div>
+            <div class="box">
+                <img src="img/doc3.jpg">
+                <h3>Dr. Anmol Patil</h3>
+                <p>Ear-Nose-Throat (ENT) Specialist</p>
+                <p>MBBS, Diploma in Otorhinolaryngology (DLO), DNB - ENT 14 years experience overall </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="services-section">
+            <div class="inner-width">
+                <h1 class="section-title">Our Services</h1>
+                <div class="border"></div>
+                <div class="services-container">
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fa fa-ambulance"></i>
+                        </div>
+                        <div class="service-title">EMERGENCY SERVICES</div>
+                        <div class="service-desc">
+                            Mumbai and more so in Western India to have a comprehensive Level-1 Accident & Emergency Department (A&E) for patient care
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fa fa-heartbeat"></i>
+                        </div>
+                        <div class="service-title">We Care</div>
+                        <div class="service-desc">
+                            We care in Tsec Hospital
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fa fa-user-md"></i>
+                        </div>
+                        <div class="service-title">Responsive Designs</div>
+                        <div class="service-desc">
+                            In TSEC Hospital we have the number one doctors who are experienced
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="service-title">24 HOUR SERVICES</div>
+                        <div class="service-desc">
+                            We have one of the best services at anytime
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="	fa fa-wheelchair"></i>
+                        </div>
+                        <div class="service-title">Cancer Care</div>
+                        <div class="service-desc">
+                            We have the best equipments in whole of India
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fa fa-medkit"></i>
+                        </div>
+                        <div class="service-title">Rehabilation Center</div>
+                        <div class="service-desc">
+                            We have a 2 floor rehabilitaion center in TSEC
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--  CONTACT US  -->
+    <footer>
+        <div class="footer">
+
+
+
+
+            <div class="contact_cont" id="contact_cont">
+                <div id="contact">
+                    <div class="ftxt" id="ftxt">
+                        <h1 class="h1alt" id="contactin">TSEC CLINIC</h1>
+                        <p>
+                            Monday-Saturday 8am to 10pm
+                        </p>
+
+                        <p>21st Street Bandra , Mumbai</p>
+
+
+
+                        <p>+91 9967770380 </p>
+                        <P>Fax No: +917506323383</P>
+
+                        <p>Tsec Clinics copyright &copy; 2019</p>
+                    </div>
+                    <h1 class="h1alt" id="contact">Stay in the Loop </h1>
+                    <p>Send us an email, or follow us on social media</p>
+
+                    <div class="social-icons-alt" id="social-icons-alt">
+                        <a href="https://twitter.com/PurdueHyperloop?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="iconsalt" src="./img/social-icons/twitter.png"></a>
+                        <a href="https://www.facebook.com/PurdueHyperloop/"><img class="iconsalt" src="./img/social-icons/facebook.png"></a>
+                        <a href="https://www.instagram.com/purdue_hyperloop/?hl=en"><img class="iconsalt" src="./img/social-icons/instagram.png"></a>
+                        <a href="mailto:someone@yoursite.com"><img class="iconsalt" src="./img/social-icons/email.png"></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

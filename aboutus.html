@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <title>TSEC Clinic</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="./script.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Best and Affordable health services">
+    <meta name="keywords" content="clinic, doctor, medicine, consultation">
+    <style>
+        #about {
+            text-align: center;
+        }
+        
+        #showcase {
+            min-height: 400px;
+            background: url('img/bg-about.jpg') no-repeat -230px -350px;
+            opacity: 0.8;
+            text-align: center;
+            width: 100%;
+            color: black;
+        }
+        
+        #boxes .box img {
+            width: 200px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p").toggle(1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">TSEC</span> Clinic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="doctors.html"> DOCTORS </a></li>
+                    <li class="current"><a href="aboutus.html"> ABOUT US </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                    <li><a href="sim.html">BUY</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Showcase">
+        <div class="container">
+            <h1>About Us</h1>
+
+
+
+        </div>
+    </section>
+    <hr>
+    <br><br>
+    <section id="about">
+        <div class="container">
+            <button class="button"><span>ABOUT US </span></button>
+            <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+            </p>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides">
+            <q>The best experience on could get.</q>
+            <p class="author">- John Keats</p>
+        </div>
+
+        <div class="mySlides">
+            <q>Best class services and staff.</q>
+            <p class="author">- Ernest Hemingway</p>
+        </div>
+
+        <div class="mySlides">
+            <q>New advanced technology to help with all problems possible.</q>
+            <p class="author">- Thomas A. Edison</p>
+        </div>
+
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
+    <!-- <footer>
+        <div class="container">
+                <h3>ANM Clinic</h3>
+                <p>
+                    Monday-Saturday 8am to 10pm
+                </p>
+                <div>
+                    <p>21st Street Goregaon, Mumbai</p>
+                </div>
+
+                <div>
+                    <p>+91 981966595 </p>
+                </div>
+                <p>ANM Clinics, Copyright &copy; 2018</p>
+ 
+                
+        </div>
+    </footer> -->
+
+
+
+    <!--  CONTACT US  -->
+    <footer>
+        <div class="footer">
+
+
+
+
+            <div class="contact_cont" id="contact_cont">
+                <div id="contact">
+                    <div class="ftxt" id="ftxt">
+                        <h1 class="h1alt" id="contactin">TSEC CLINIC</h1>
+                        <p>
+                            Monday-Saturday 8am to 10pm
+                        </p>
+
+                        <p>Bandra, Mumbai</p>
+
+
+
+                        <p>+91 9967770380 </p>
+                        <P>Fax No: +91 - 000000000</P>
+
+                        <p>Tsec Clinics, Copyright &copy; 2019</p>
+                    </div>
+                    <h1 class="h1alt" id="contact">Stay in the Loop </h1>
+                    <p>Send us an email, or follow us on social media</p>
+
+                    <div class="social-icons-alt" id="social-icons-alt">
+                        <a href="https://twitter.com/PurdueHyperloop?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="iconsalt" src="./img/social-icons/twitter.png"></a>
+                        <a href="https://www.facebook.com/PurdueHyperloop/"><img class="iconsalt" src="./img/social-icons/facebook.png"></a>
+                        <a href="https://www.instagram.com/purdue_hyperloop/?hl=en"><img class="iconsalt" src="./img/social-icons/instagram.png"></a>
+                        <a href="mailto:someone@yoursite.com"><img class="iconsalt" src="./img/social-icons/email.png"></a>
+
+
+                    </div </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

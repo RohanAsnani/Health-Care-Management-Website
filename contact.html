@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <title>TSEC Clinic</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Best and Affordable health services">
+    <meta name="keywords" content="clinic, doctor, medicine, consultation">
+    <style>
+        #showcase {
+            background: none;
+        }
+        
+        #boxes .box img {
+            width: 100px;
+        }
+        
+        a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">TSEC</span> Clinic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="doctors.html"> DOCTORS </a></li>
+                    <li><a href="aboutus.html"> ABOUT US </a></li>
+                    <li class="current"><a href="contact.html"> CONTACT </a></li>
+                    <li><a href="sim.html">BUY</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Showcase">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60333.02702218159!2d72.80026683114015!3d19.071905492220097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sThadomal+Shahani+Engineering+College!5e0!3m2!1sen!2sin!4v1540630563201"
+            style="border:0; width:100%; height:400px;" allowfullscreen=""></iframe>
+    </section>
+
+
+    <section id="bookapt">
+        <div class="container">
+            <h1>
+                Want To Book An Appointment?
+            </h1>
+            <form action="signUp.php" method="post">
+                <input type="text" name="name" placeholder=" Enter your Name" required>
+                <input type="email" name="abc" placeholder="Enter your Email" id="xyz" onblur="validateEmail(this.value);" required>
+                <input type="tel" name="phonenumber" placeholder="Phone Number" required pattern="[0-9]{10}" />
+                <input type="submit" class="button_1" name="Submit" placeholder="Submit" />
+            </form>
+        </div>
+    </section>
+    <script>
+        function validateEmail(sEmail) {
+            var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
+
+            if (!sEmail.match(reEmail)) {
+                alert("Invalid email address");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="img/addr.svg">
+                <h3>Address</h3>
+                <p>21st Street Goregaon, Mumbai, Maharashtra 400062</p>
+            </div>
+            <div class="box">
+                <img src="img/mail.svg">
+                <h3>Email</h3>
+                <a href="mailto:contact@anm.in">contact@anm.in</a>
+            </div>
+            <div class="box">
+                <img src="img/phone.svg">
+                <h3>Phone</h3>
+                <a href="tel:02228882888">022-28882888</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <footer>
+        <div class="container">
+                <h3>ANM Clinic</h3>
+                <p>
+                    Monday-Saturday 8am to 10pm
+                </p>
+                <div>
+                    <p><span>21st Street </span> Goregaon, Mumbai</p>
+                </div>
+
+                <div>
+                    <p>+91 981966595 </p>
+                </div>
+                <p>ANM Clinics, Copyright &copy; 2018</p>
+ 
+                
+        </div>
+
+    </footer> -->
+
+    <!--  CONTACT US  -->
+    <footer>
+        <div class="footer">
+
+
+
+
+            <div class="contact_cont" id="contact_cont">
+                <div id="contact">
+                    <div class="ftxt" id="ftxt">
+                        <h1 class="h1alt" id="contactin">TSEC CLINIC</h1>
+                        <p>
+                            Monday-Saturday 8am to 10pm
+                        </p>
+
+                        <p>bandra, Mumbai</p>
+
+
+
+                        <p>+91 967770380 </p>
+                        <P>Fax No: +919967770380</P>
+
+                        <p>TSEC Clinics, Copyright &copy; 2019</p>
+                    </div>
+                    <h1 class="h1alt" id="contact">Stay in the Loop </h1>
+                    <p>Send us an email, or follow us on social media</p>
+
+                    <div class="social-icons-alt" id="social-icons-alt">
+                        <a href="https://twitter.com/PurdueHyperloop?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="iconsalt" src="./img/social-icons/twitter.png"></a>
+                        <a href="https://www.facebook.com/PurdueHyperloop/"><img class="iconsalt" src="./img/social-icons/facebook.png"></a>
+                        <a href="https://www.instagram.com/purdue_hyperloop/?hl=en"><img class="iconsalt" src="./img/social-icons/instagram.png"></a>
+                        <a href="mailto:someone@yoursite.com"><img class="iconsalt" src="./img/social-icons/email.png"></a>
+
+
+                    </div </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
